@@ -151,7 +151,8 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(_affichage),
-              Image.asset("Assets/Images/favicon.png"),
+              Image.asset("Assets/Images/gogo.png"),
+              Image.network("https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg")
             ],
           ),
         ),
