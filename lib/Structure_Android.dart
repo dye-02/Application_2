@@ -103,7 +103,6 @@ class _MyHomePageState extends State<MyHomePage> {
           onTap: _itemClique,
           currentIndex: _selectedIndex
       ),
-      
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -152,6 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(_affichage),
+              Image.asset("Assets/Images/favicon.png"),
             ],
           ),
         ),
