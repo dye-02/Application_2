@@ -55,10 +55,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  //int _counter = 0;
   
 
-  void _incrementCounter() {
+  /*void _incrementCounter() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
@@ -67,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -88,15 +88,87 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Row(
-        children: <Widget>[
-          Column(
-            [
-              Text(data)
+        mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 75,
+                    width: 75,
+                    child: Text('Pavlova'),
+                  ),
+                  Container(
+                    height: 300,
+                    width: 300,
+                    child: Text("La pavlova est un dessert à base de meringue, nappé de crème chantilly et recouvert de fruits frais. Ce dessert fut ainsi nommé en l'honneur de la ballerine russe Anna Pavlova. La spécificité de la pavlova est d'être croustillante à l'extérieur et moelleuse à l'intérieur."),
+                  ),
+                  Row(
+                    children: [
+                    Icon(Icons.star, color: Colors.green[500]),
+                    Icon(Icons.star, color: Colors.green[500]),
+                    Icon(Icons.star, color: Colors.green[500]),
+                    const Icon(Icons.star, color: Colors.black),
+                    const Icon(Icons.star, color: Colors.black),
+                    Container(
+                      width: 140,
+                    ),
+                    Text('170 Notes'),
+                    ],
+                  ),
+                  Container(
+                    height: 50,
+                  ),
+
+
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          Icon(Icons.kitchen, color: Colors.green[500]),
+                          const Text('PREP:'),
+                          const Text('25 min'),
+                        ],
+                      ),
+                      Container(
+                        width: 75,
+                      ),
+                      Column(
+                        children: [
+                          Icon(Icons.timer, color: Colors.green[500]),
+                          const Text('COOK:'),
+                          const Text('1 hr'),
+                        ],
+                      ),
+                      Container(
+                        width: 75,
+                      ),
+                      Column(
+                        children: [
+                          Icon(Icons.restaurant, color: Colors.green[500]),
+                          const Text('FEEDS:'),
+                          const Text('4-6'),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+
+
+
+
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('          ')
+                ],
+              ),
+
+
+              Image.asset("Assets/Images/PavFraise.png"),
             ],
-          ),
-          Image(image: image)
-        ],
-      )
+        ),
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
           // Column is also a layout widget. It takes a list of children and
