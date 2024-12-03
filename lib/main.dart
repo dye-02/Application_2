@@ -94,8 +94,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    height: 75,
-                    width: 75,
+                    color: Colors.blue,
+                    height: 25,
+                    width: 53,
                     child: Text('Pavlova'),
                   ),
                   Container(
